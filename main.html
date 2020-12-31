@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="javascript.js"></script>
+  
+  
+  </head>
+  <body >
+      <div class="container">
+          <div class="row">
+
+
+          <div class="col-sm-5">
+      <div class="card bg-secondary">
+          <div class="card-header">
+              <h1>Factorial Of A number</h1>
+          </div>
+          <div class="card-body">
+              <input type="text" placeholder="Enter a number" id="num_fact" name="num_fact"> 
+              <input type="button" class="btn-success" value="Calculate" onclick="fact()" style="margin-left: 15px;">
+          </div>
+          <div class="card-footer">
+              <textarea class="text-success font-weight-bold" id="text_num_fact" rows="2" cols="40"></textarea>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-5">
+            <div class="card">
+                <div class="card-header"><h1>Simple Calculator</h1></div>
+                <div class="card-body">
+                    <textarea id="text_num_calc" class="font-weight-bold"rows="3" cols="40"></textarea>
+                </div>
+                <div class="card-footer">
+                    <table class="table table-bordered bg-dark ">
+                        <tr>
+                            <td style="background-color: #ffffff;"></td>
+                            <td><button type="button" class="btn text-white" value="^" onclick="read(this)">x<sup>y</sup></button></td>
+                            <td><button type="button" class="btn text-white" value="(" onclick="read(this)">(</button></td>
+                            <td><button type="button" class="btn text-white" value=")" onclick="read(this)">)</button></td>
+                            
+                            <td class="bg-warning"><button type="button" onclick="remove()" class="btn btn-warning text-white"><-</button></td>
+                            <td class="bg-danger"><button type="button" onclick="clears()" class="btn btn-danger">clear</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn text-white" onclick="Log_10()">log</button></td>
+                            <td><button type="button" class="btn text-white" onclick="Sin()">Sin</button></td>
+                            <td><button type="button" class="btn text-white" value="7" onclick="read(this)">7</button></td>
+                            <td><button type="button" class="btn text-white" value="8" onclick="read(this)">8</button></td>
+                            <td><button type="button" class="btn text-white" value="9" onclick="read(this)">9</button></td>
+                            <td><button type="button" class="btn text-white" value="*" onclick="read(this)">x</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn text-white" onclick="Ln()">ln</button></td>
+                            <td><button type="button" class="btn text-white" onclick="Cos()">Cos</button></td>
+                            <td><button type="button" class="btn text-white" value="4" onclick="read(this)">4</button></td>
+                            <td><button type="button" class="btn text-white" value="5" onclick="read(this)">5</button></td>
+                            <td><button type="button" class="btn text-white" value="6" onclick="read(this)">6</button></td>
+                            <td><button type="button" class="btn text-white" value="+" onclick="read(this)">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn text-white" >exp</button></td>
+                            <td><button type="button" class="btn text-white" onclick="Tan()">Tan</button></td>
+                            <td><button type="button" class="btn text-white" value="1" onclick="read(this)">1</button></td>
+                            <td><button type="button" class="btn text-white" value="2" onclick="read(this)">2</button></td>
+                            <td><button type="button" class="btn text-white" value="3" onclick="read(this)">3</button></td>
+                            <td><button type="button" class="btn text-white" value="-" onclick="read(this)">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button type="button" class="btn text-white" onclick="Sqrt()">sqrt</button></td>
+                            <td><button type="button" class="btn text-white" value="%" onclick="read(this)">%</button></td>
+                            <td><button type="button" class="btn text-white" value="/" onclick="read(this)">/</button></td>
+                            <td><button type="button" class="btn text-white" value="0" onclick="read(this)">0</button></td>
+                            <td><button type="button" class="btn text-white" value="." onclick="read(this)">.</button></td>
+                            <td class="bg-success"><button type="button" class="btn btn-success" onclick="calculate()">=</button></td>
+                       
+                        </tr>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </body>
+  </html>
